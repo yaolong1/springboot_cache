@@ -1,0 +1,18 @@
+server:
+   port: 8080
+spring:
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/springboot_cache?serverTimezone=UTC
+      username: root
+      password: yin7372175240000
+
+mybatis:
+    type-aliases-package: com.example.springboot_cache.bean
+    configuration:
+       #开启驼峰命名规则
+       map-underscore-to-camel-case: true
+logging:
+   level:
+      com.example.springboot_cache.mapper: debug
+
