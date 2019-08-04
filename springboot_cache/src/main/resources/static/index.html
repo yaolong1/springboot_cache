@@ -4,7 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<script src="js/jquery.min.js"></script>
+<script>
+    // // 页面加载
+    // // 页面加载
+    // $(function () {
+    //     // 绑定点击事件
+    //     $("#btn").click(function () {
+    //         $.ajax({
+    //             url: "user/testJson",
+    //             contentType: "application/json;charset=UTF-8",
+    //             data: '{"addressName":"aa","addressNum":100}',
+    //             dataType: "json",
+    //             type: "post",
+    //             success: function (data) {
+    //                 alert(data);
+    //             }
+    //         });
+    //     });
+    // });
+</script>
 <body>
-<a href="employee/1">get</a>
+<a href="getEmployee/1">get</a>
+
+<form action="employee" method="post" >
+    lastName:<input name="lastName" type="text"/><br>
+    email:<input name="email" type="text"/><br>
+    gender:<input name="gender" type="text"/><br>
+    dId:<input name="dId" type="text"/>
+    <input type="submit" value="提交" />
+</form>
 </body>
 </html>
