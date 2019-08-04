@@ -9,4 +9,8 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface DepartmentMapper {
+    /**
+     * 根据id查找
+     */
+    public void finDepartmentdById(Integer id);
 }
