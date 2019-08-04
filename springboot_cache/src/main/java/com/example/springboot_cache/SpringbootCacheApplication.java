@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * 快速体验缓存
@@ -17,6 +18,7 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @MapperScan("com.example.springboot_cache.mapper")
 @EnableCaching
+@EnableTransactionManagement
 public class SpringbootCacheApplication {
 
     public static void main(String[] args) {
